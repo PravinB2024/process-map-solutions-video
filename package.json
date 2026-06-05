@@ -1,0 +1,24 @@
+{
+  "name": "process-map-solutions-video",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "remotion studio src/index.ts",
+    "render": "remotion render src/index.ts ProcessMapSolutions out/process-map-solutions.mp4 --codec h264 --pixel-format yuv420p",
+    "render:still": "remotion still src/index.ts ProcessMapSolutions out/hero-frame.png --frame=2340"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.471",
+    "lucide-react": "^0.468.0",
+    "motion": "^12.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.471"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "typescript": "^5.6.3"
+  }
+}
